@@ -1,0 +1,41 @@
+# LinkedIn automation configuration
+headless: false
+debug: true
+base_url: "https://www.linkedin.com"
+
+credentials:
+  email: "spamxv23@gmail.com"
+  password: "replace-me"
+
+profile:
+  user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  viewport:
+    width: 1440
+    height: 900
+    scale: 1.0
+  timezone: "America/Los_Angeles"
+  proxy: ""  # socks5://user:pass@host:port or http://...
+
+humanization:
+  min_delay_ms: 500
+  max_delay_ms: 1900
+  jitter_ms: 400
+  scroll_pause_ms: 900
+  typing_variance: 120
+
+persistence:
+  db_path: "./data/state.db"
+
+behavior:
+  target_search_queries:
+    - "site reliability engineer"
+    - "devops engineer"
+  daily_connection_limit: 35
+  daily_message_limit: 30
+  message_templates:
+    - "Hi {first_name}, enjoyed your recent post on {topic}. Would love to connect!"
+    - "Hey {first_name}, fellow {industry} enthusiast here. Up for a quick chat?"
+  blacklist:
+    - "Acme Inc"
+    - "Recruiter"
+

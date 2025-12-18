@@ -2,6 +2,10 @@
 
 CLI-only Go bot that drives LinkedIn via [Rod](https://github.com/go-rod/rod) while applying layered stealth techniques and persisting state in SQLite.
 
+## Demo Video Link
+
+https://drive.google.com/file/d/1G5UJrm3Wchd2M2n-PyLcU-6xA5tZJ7Id/view?usp=sharing
+
 ## Project layout
 ```
 linkedin-automation/
